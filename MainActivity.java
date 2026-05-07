@@ -2,7 +2,7 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.widget.Button
-import androidx.activity.EdgeToEdge
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
@@ -11,10 +11,9 @@ import androidx.core.view.WindowInsetsCompat
 class MainActivity : AppCompatActivity() {
     var btn: Button? = null
 
-    @Override
-    protected fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        EdgeToEdge.enable(this)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         //ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
         //    Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
