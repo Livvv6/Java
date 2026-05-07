@@ -44,29 +44,25 @@
         android:hint="°°°°°"
         android:inputType="textPassword"/>
 
-    <TextView
-        android:id="@+id/txt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Repetir Senha"/>
-
-    <EditText
-        android:id="@+id/confpass"
-        android:layout_width="380dp"
-        android:layout_height="50dp"
-        android:hint="°°°°°"
-        android:inputType="textPassword"/>
-
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Concordo com os Termos de Uso"/>
+        android:text="Manter Logado"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:text="Cadastrar"
+        android:textColor="#38254D"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"
+        android:text="Confirmar"
         android:layout_gravity="center"
         android:layout_margin="32dp"/>
 
